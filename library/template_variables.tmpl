@@ -8,13 +8,7 @@
 {{- end}}
 
 {{ define `cloud` -}}
-    {{- if eq .input_cloud `azure` -}}
         azure
-    {{- else if eq .input_cloud `aws` -}}
-        aws
-    {{- else -}}
-        {{ fail `Invalid selection of cloud. Please choose from [azure, aws]` }}
-    {{- end -}}
 {{- end}}
 
 {{ define `cicd_platform` -}}
